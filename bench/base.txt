@@ -1,0 +1,66 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/jonbodner/testtalk/bench
+cpu: Apple M3 Max
+BenchmarkFileLen/FileLen-1-16         	      48	  24209593 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-1-16         	      49	  23930483 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-1-16         	      49	  23924955 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-1-16         	      50	  23872572 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-1-16         	      50	  24026497 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-1-16         	      48	  23967380 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-1-16         	      49	  23820400 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-1-16         	      50	  23862910 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-1-16         	      49	  23900627 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-1-16         	      49	  24265278 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-10-16        	     495	   2420018 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-10-16        	     496	   2428988 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-10-16        	     494	   2428428 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-10-16        	     492	   2448692 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-10-16        	     489	   2433142 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-10-16        	     492	   2431828 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-10-16        	     493	   2424069 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-10-16        	     496	   2428159 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-10-16        	     475	   2459789 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-10-16        	     493	   2425608 ns/op	     128 B/op	       3 allocs/op
+BenchmarkFileLen/FileLen-100-16       	    4400	    263174 ns/op	   73377 B/op	     657 allocs/op
+BenchmarkFileLen/FileLen-100-16       	    4588	    262001 ns/op	   73376 B/op	     657 allocs/op
+BenchmarkFileLen/FileLen-100-16       	    4615	    266423 ns/op	   73376 B/op	     657 allocs/op
+BenchmarkFileLen/FileLen-100-16       	    4561	    263276 ns/op	   73376 B/op	     657 allocs/op
+BenchmarkFileLen/FileLen-100-16       	    4446	    263112 ns/op	   73376 B/op	     657 allocs/op
+BenchmarkFileLen/FileLen-100-16       	    4566	    262321 ns/op	   73376 B/op	     657 allocs/op
+BenchmarkFileLen/FileLen-100-16       	    4561	    264222 ns/op	   73376 B/op	     657 allocs/op
+BenchmarkFileLen/FileLen-100-16       	    4479	    265707 ns/op	   73376 B/op	     657 allocs/op
+BenchmarkFileLen/FileLen-100-16       	    4554	    262895 ns/op	   73376 B/op	     657 allocs/op
+BenchmarkFileLen/FileLen-100-16       	    4558	    270717 ns/op	   73377 B/op	     657 allocs/op
+BenchmarkFileLen/FileLen-1000-16      	   30612	     42287 ns/op	   68736 B/op	      70 allocs/op
+BenchmarkFileLen/FileLen-1000-16      	   26743	     45274 ns/op	   68736 B/op	      70 allocs/op
+BenchmarkFileLen/FileLen-1000-16      	   26713	     43114 ns/op	   68736 B/op	      70 allocs/op
+BenchmarkFileLen/FileLen-1000-16      	   30728	     39462 ns/op	   68736 B/op	      70 allocs/op
+BenchmarkFileLen/FileLen-1000-16      	   30706	     41997 ns/op	   68736 B/op	      70 allocs/op
+BenchmarkFileLen/FileLen-1000-16      	   27715	     44484 ns/op	   68736 B/op	      70 allocs/op
+BenchmarkFileLen/FileLen-1000-16      	   27214	     44530 ns/op	   68736 B/op	      70 allocs/op
+BenchmarkFileLen/FileLen-1000-16      	   27699	     42592 ns/op	   68736 B/op	      70 allocs/op
+BenchmarkFileLen/FileLen-1000-16      	   28222	     44168 ns/op	   68736 B/op	      70 allocs/op
+BenchmarkFileLen/FileLen-1000-16      	   28333	     40839 ns/op	   68736 B/op	      70 allocs/op
+BenchmarkFileLen/FileLen-10000-16     	   72182	     16096 ns/op	   82048 B/op	      11 allocs/op
+BenchmarkFileLen/FileLen-10000-16     	   77571	     15557 ns/op	   82048 B/op	      11 allocs/op
+BenchmarkFileLen/FileLen-10000-16     	   74865	     15552 ns/op	   82048 B/op	      11 allocs/op
+BenchmarkFileLen/FileLen-10000-16     	   76750	     15569 ns/op	   82048 B/op	      11 allocs/op
+BenchmarkFileLen/FileLen-10000-16     	   77178	     16494 ns/op	   82048 B/op	      11 allocs/op
+BenchmarkFileLen/FileLen-10000-16     	   68049	     16774 ns/op	   82048 B/op	      11 allocs/op
+BenchmarkFileLen/FileLen-10000-16     	   75020	     16813 ns/op	   82048 B/op	      11 allocs/op
+BenchmarkFileLen/FileLen-10000-16     	   69385	     17257 ns/op	   82048 B/op	      11 allocs/op
+BenchmarkFileLen/FileLen-10000-16     	   73350	     16529 ns/op	   82048 B/op	      11 allocs/op
+BenchmarkFileLen/FileLen-10000-16     	   71812	     16309 ns/op	   82048 B/op	      11 allocs/op
+BenchmarkFileLen/FileLen-100000-16    	   64848	     18222 ns/op	  213121 B/op	       5 allocs/op
+BenchmarkFileLen/FileLen-100000-16    	   64496	     18643 ns/op	  213121 B/op	       5 allocs/op
+BenchmarkFileLen/FileLen-100000-16    	   64164	     18552 ns/op	  213121 B/op	       5 allocs/op
+BenchmarkFileLen/FileLen-100000-16    	   64010	     18758 ns/op	  213121 B/op	       5 allocs/op
+BenchmarkFileLen/FileLen-100000-16    	   64316	     18567 ns/op	  213121 B/op	       5 allocs/op
+BenchmarkFileLen/FileLen-100000-16    	   65498	     18402 ns/op	  213121 B/op	       5 allocs/op
+BenchmarkFileLen/FileLen-100000-16    	   64840	     18543 ns/op	  213121 B/op	       5 allocs/op
+BenchmarkFileLen/FileLen-100000-16    	   64682	     18700 ns/op	  213121 B/op	       5 allocs/op
+BenchmarkFileLen/FileLen-100000-16    	   63969	     18590 ns/op	  213121 B/op	       5 allocs/op
+BenchmarkFileLen/FileLen-100000-16    	   64786	     18563 ns/op	  213120 B/op	       5 allocs/op
+PASS
+ok  	github.com/jonbodner/testtalk/bench	72.371s
