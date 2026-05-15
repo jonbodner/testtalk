@@ -83,39 +83,39 @@ func (c *Cache[K, V]) Len() int {
 }
 
 // clean periodically removes expired entries.
-//func (c *Cache[K, V]) clean(interval time.Duration) {
-//	ticker := time.NewTicker(interval)
-//	defer ticker.Stop()
-//	for range ticker.C {
-//		c.mu.Lock()
-//		now := time.Now()
-//		for k, e := range c.items {
-//			if now.After(e.expiresAt) {
-//				delete(c.items, k)
-//				c.Stats.RemovedBySweep++
-//			}
-//		}
-//		c.mu.Unlock()
-//	}
-//}
-
 func (c *Cache[K, V]) clean(interval time.Duration) {
 	ticker := time.NewTicker(interval)
 	defer ticker.Stop()
-	for {
-		select {
-		case <-ticker.C:
-			c.mu.Lock()
-			now := time.Now()
-			for k, e := range c.items {
-				if !now.Before(e.expiresAt) {
-					delete(c.items, k)
-					c.Stats.RemovedBySweep++
-				}
+	for range ticker.C {
+		c.mu.Lock()
+		now := time.Now()
+		for k, e := range c.items {
+			if now.After(e.expiresAt) {
+				delete(c.items, k)
+				c.Stats.RemovedBySweep++
 			}
-			c.mu.Unlock()
-		case <-c.done:
-			return
 		}
+		c.mu.Unlock()
 	}
 }
+
+//func (c *Cache[K, V]) clean(interval time.Duration) {
+//	ticker := time.NewTicker(interval)
+//	defer ticker.Stop()
+//	for {
+//		select {
+//		case <-ticker.C:
+//			c.mu.Lock()
+//			now := time.Now()
+//			for k, e := range c.items {
+//				if !now.Before(e.expiresAt) {
+//					delete(c.items, k)
+//					c.Stats.RemovedBySweep++
+//				}
+//			}
+//			c.mu.Unlock()
+//		case <-c.done:
+//			return
+//		}
+//	}
+//}
